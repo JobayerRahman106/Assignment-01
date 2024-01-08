@@ -309,6 +309,9 @@ button{
 .holiday-image-box{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 11;
+    
 }
 .image-box-one{
     position: relative;
@@ -326,6 +329,7 @@ button{
     border-radius: 16px 0px 16px 16px;
     background: #F00;
     margin-top: -234px;
+    z-index: 1;
 }
 .main-img{
     position: relative;
@@ -337,6 +341,7 @@ button{
     margin-top: 155px;
     width: 206.841px;
     height: 206.841px;
+    
 }
 /* Holiday Area End */
 
