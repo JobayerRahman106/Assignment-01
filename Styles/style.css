@@ -426,11 +426,28 @@ button{
     line-height: 32px; /* 160% */
 }
 .news-form{
+    display: flex;
+    justify-content: center;
+    
+}
+.news-form input{
     margin-top: 50px;
-    width: 50%;
     text-align: center;
+    width: 648px;
+    height: 72px;
+        /* padding: 25px 10px; */
+    border: none;
+    border-radius: 50px 0 0 50px;
     }
-
+.news-form .sub-btn{
+    width: 210px;
+    height: 72px;
+    border-radius: 0 50px 50px 0 !important;
+    background: #F00;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    }
 /* newsletter Area End */
 
 
