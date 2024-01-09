@@ -26,9 +26,10 @@ header{
     background: url(../resources/Banner\ Image.png);
     border-radius: 16px;
     padding: 175px 0;
-    position: relative;        
+    position: relative;  
+    z-index: 1;      
 }
-.banner::before{
+.banner::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -36,7 +37,8 @@ header{
     top: 0;
     left: 0;
     border-radius: 16px;
-    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%);    
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%); 
+    z-index: 0;   
 }
 .banner-text h4{
     color: #FFF;
@@ -104,9 +106,14 @@ header{
 /* Party Area Start */
  .party{
     background: url(../resources/Vectorrr.png);
-    padding: 125px 0;
+    background-repeat: no-repeat;
+    padding: 100px 0;
     margin-bottom: 100px;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
 }
 .party-text{
     margin-left: 50px;
@@ -323,12 +330,13 @@ button{
 }
 .box-style{
     position: absolute;
-    width: 1320px;
+    width: 1227px;
     height: 229px;
     flex-shrink: 0;
     border-radius: 16px 0px 16px 16px;
     background: #F00;
     margin-top: -234px;
+    overflow: hidden;
     z-index: 1;
 }
 .main-img{
